@@ -18,6 +18,10 @@ hosts:
   ".*":                     # Regex for all hosts
     +s: xxh-shell-osquery
 ```
+Connect:
+```
+xxh myhost +s xxh-shell-osquery
+```
 
 ## Thanks
 * **alessandrogario**
