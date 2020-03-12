@@ -20,7 +20,7 @@ hosts:
 ```
 Connect:
 ```
-xxh myhost +s xxh-shell-osquery
+xxh myhost +s xxh-shell-osquery +if
 ```
 
 ## Thanks
