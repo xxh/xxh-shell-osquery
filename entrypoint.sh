@@ -20,10 +20,16 @@ if [[ $EXECUTE_COMMAND ]]; then
     echo Execute command: $EXECUTE_COMMAND
   fi
 
+  echo 'osquery entrypoint does not support command execution. Feel free to add support: https://github.com/xxh/xxh-shell-osquery'
+  exit 1
+
   EXECUTE_COMMAND=(-c "${EXECUTE_COMMAND}")
 fi
 
 if [[ $EXECUTE_FILE ]]; then
+  echo 'osquery entrypoint does not support file execution. Feel free to add support: https://github.com/xxh/xxh-shell-osquery'
+  exit 1
+
   EXECUTE_COMMAND=""
 fi
 
