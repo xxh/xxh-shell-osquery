@@ -3,7 +3,7 @@
 ## Install
 Install from xxh repo:
 ```
-xxhp i xxh-shell-osquery
+xxh +I xxh-shell-osquery
 ```
 Install from any repo:
 ```
