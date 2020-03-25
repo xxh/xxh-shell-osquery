@@ -59,5 +59,5 @@ if [[ ! -f .check-done ]]; then
   fi
 fi
 
-export XXH_HOME=`realpath $CURRENT_DIR/../../../..`
+export XXH_HOME=`dirname $CURRENT_DIR/../../../../p`
 $osqueryd -S
