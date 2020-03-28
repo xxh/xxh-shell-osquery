@@ -1,6 +1,6 @@
 #!/bin/bash
 
-while getopts f:c:v:e: option
+while getopts f:c:v:e:H: option
 do
 case "${option}"
 in
@@ -8,6 +8,7 @@ f) EXECUTE_FILE=${OPTARG};;
 c) EXECUTE_COMMAND=${OPTARG};;
 v) VERBOSE=${OPTARG};;
 e) ENV+=("$OPTARG");;
+H) HOMEPATH=${OPTARG};;
 esac
 done
 
@@ -61,4 +62,18 @@ fi
 
 export XXH_HOME=`readlink -f $CURRENT_DIR/../../../..`
 export XDG_CONFIG_HOME=$XXH_HOME/.config
+
+if [[ $HOMEPATH != '' ]]; then
+  homerealpath=`readlink -f $HOMEPATH`
+  if [[ -d $homerealpath ]]; then
+    export HOME=$homerealpath
+  else
+    echo "Home path not found: $homerealpath"
+    echo "Set HOME to $XXH_HOME"
+    export HOME=$XXH_HOME
+  fi
+else
+  export HOME=$XXH_HOME
+fi
+
 $osqueryd -S
