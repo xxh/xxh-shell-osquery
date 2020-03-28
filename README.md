@@ -4,17 +4,17 @@
 Install from xxh repo:
 ```
 xxh +I xxh-shell-osquery
-xxh myhost +s xxh-shell-osquery
+xxh myhost +s osquery
 ```
 To avoid adding `+s` every time use xxh config in `~/.config/xxh/config.xxhc` (`$XDG_CONFIG_HOME`):
 ```
 hosts:
   ".*":                     # Regex for all hosts
-    +s: xxh-shell-osquery
+    +s: osquery
 ```
 Connect:
 ```
-xxh myhost +s xxh-shell-osquery +if
+xxh myhost +s osquery +if
 ```
 
 ## Thanks
