@@ -60,4 +60,5 @@ if [[ ! -f .check-done ]]; then
 fi
 
 export XXH_HOME=`dirname $CURRENT_DIR/../../../../p`
+export XDG_CONFIG_HOME=$XXH_HOME/.config
 $osqueryd -S
