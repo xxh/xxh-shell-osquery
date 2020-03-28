@@ -6,7 +6,7 @@ Install from xxh repo:
 xxh +I xxh-shell-osquery
 xxh myhost +s xxh-shell-osquery
 ```
-To avoid adding `+s` every time use xxh config in `~/.xxh/.xxhc`:
+To avoid adding `+s` every time use xxh config in `~/.config/xxh/config.xxhc` (`$XDG_CONFIG_HOME`):
 ```
 hosts:
   ".*":                     # Regex for all hosts
