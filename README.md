@@ -1,4 +1,10 @@
-[Xxh](https://github.com/xxh/xxh) entrypoint for [osquery](https://osquery.io). 
+<p align="center">  
+<a href="https://github.com/xxh/xxh">xxh</a> entrypoint for <a href="https://osquery.io">osquery</a>. 
+</p>
+
+<p align="center">  
+If you like the idea of xxh click ⭐ on the repo and stay tuned.
+</p>
 
 ## Install
 Install from xxh repo:
