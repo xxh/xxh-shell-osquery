@@ -60,7 +60,7 @@ done
 
 CURRENT_DIR="$(cd "$(dirname "$0")" && pwd)"
 cd $CURRENT_DIR
-osqueryd=./usr/local/bin/osqueryd
+osqueryd=./opt/osquery/bin/osqueryd
 # Check
 if [[ ! -f .check-done ]]; then
   check_result=`$osqueryd --version 2>&1`

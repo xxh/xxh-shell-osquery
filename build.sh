@@ -13,7 +13,7 @@ do
   esac
 done
 
-url='https://pkg.osquery.io/linux/osquery-4.2.0_1.linux_x86_64.tar.gz'
+url='https://pkg.osquery.io/linux/osquery-5.4.0_1.linux_x86_64.tar.gz'
 tarname=`basename $url`
 
 rm -rf $build_dir
